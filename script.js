@@ -167,17 +167,17 @@ function calculate (opr, num1, num2){
     
     switch(opr){
         case '+':
-            result = parseFloat(num1) + parseFloat(num2);
+            result = (parseFloat(num1) + parseFloat(num2)).toFixed(2);
             firstNum = result;
             return result;
         
         case '-':
-            result = parseInt(num1) - parseInt(num2);
+            result = (parseFloat(num1) + parseFloat(num2)).toFixed(2);
             firstNum = result;
             return result;
 
         case '*':
-            result = parseInt(num1) * parseInt(num2);
+            result = (parseFloat(num1) + parseFloat(num2)).toFixed(2);
             firstNum = result;
             return result;
         
@@ -186,7 +186,7 @@ function calculate (opr, num1, num2){
                 alert('yeah.. no. Nice try, buddy.')
                 return 0;
             }
-            result = parseInt(num1) / parseInt(num2);
+            result = (parseFloat(num1) + parseFloat(num2)).toFixed(2);
             firstNum = result;
             return result;
     }   
